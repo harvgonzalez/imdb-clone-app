@@ -1,4 +1,11 @@
+import 'package:isar/isar.dart';
+
+part 'movie.g.dart'; // este archivo se generara de manera automatica
+
+// el decorador es para importar isar
+@collection
 class Movie {
+  Id? isarId = Isar.autoIncrement;
   final bool adult;
   final String backdropPath;
   final List<String> genreIds;
